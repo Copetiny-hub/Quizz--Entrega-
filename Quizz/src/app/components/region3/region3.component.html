@@ -1,0 +1,16 @@
+<ul id='dias'>
+    <li *ngFor="let item of Lista3">
+        <a [routerLink]="['/actualizar']" routerLinkActive="router-link-active" ><p>{{item.dia}}</p>
+        <img src="/assets/{{item.imagen}}" width="150" height="150"></a>
+            <p>{{item.grados}}</p>
+            <p>{{item.clima}}</p>
+            
+
+    </li>
+    
+</ul>
+<button id="r">celsius</button>
+<button id="e">fahrenheit</button>
+
+<p id='h'>Al dar clic sobre cada dia permitira actualizar la indormacion</p>
+<p id="l">Chile - Araucania</p>
